@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Diary extends Model
 {
     use HasFactory;
+    protected $fillable = ['content']; // 追記して想定外のデータが代入されるのを防ぎ、なおかつ、一気にデータを代入することが可能にする。
 }
