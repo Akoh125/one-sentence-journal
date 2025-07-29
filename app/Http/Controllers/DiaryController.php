@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Diary;
 
-class DiariesController extends Controller
+class DiaryController extends Controller
 {
     public function store(Request $request)
     {
@@ -32,4 +32,3 @@ class DiariesController extends Controller
     ]);
     }
 }
-
