@@ -9,12 +9,12 @@ class DiaryController extends Controller
 {
     public function index()
     {
-        // メッセージ一覧を取得
-        $diaries = Diary::all();         // 追加
+        // ひとこと日記一覧を取得
+        $diaries = Diary::all();         
 
-        // メッセージ一覧ビューでそれを表示
-        return view('diaries.index', [     // 追加
-            'diaries' => $diaries        // 追加
+        // ひとこと日記一覧ビューでそれを表示
+        return view('diaries.index', [     
+            'diaries' => $diaries        
         ]);                                 
     }
 
